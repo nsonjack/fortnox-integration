@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine Off
+</IfModule>
+
+# Tillåt direkt åtkomst till alla .php-filer
+<FilesMatch "\.php$">
+  SetHandler application/x-httpd-php
+</FilesMatch>
+
+DirectoryIndex index.php
